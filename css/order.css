@@ -1,0 +1,42 @@
+.orders{
+    padding-top: 4rem;
+    margin: 20px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 1rem;
+}
+
+.orders span{
+    color: var(--icon-color);
+    margin: 4px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.orders a{
+    padding: 10px;
+    background: var(--primary-color);
+    color: var(--header-color);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+
+
+.orders i{
+    font-size: 20px;
+}
+
+@media (max-width:860px){
+    .orders a{
+        width: 90%;
+    }
+
+    .orders{
+        align-items: flex-start;
+    }
+
+}

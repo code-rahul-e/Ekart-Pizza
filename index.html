@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunt Pizza</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/account.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="../index.html"><span>Hunt</span> Pizza</a>    
+            </div>
+            <label  id="dark-change"></label>
+            <div class="user">
+                <a href="#" id="sign-in"><i class='bx bx-user' ></i></a>
+            </div>
+            <div class="heart">
+                <div class="counts">0</div>
+                <a href="#" id="fav-logo"><i class='bx bx-heart' ></i></a>
+            </div>
+            
+            <div class="cart-logo">
+                <div class="count">0</div>
+                <a href="#"><i class='bx bx-cart' id="cart-icon"></i></a>
+            </div>
+
+        <!-- cart -->
+        </div>
+        <div class="cart">
+            <div class="cart-title">
+                Cart Items
+            </div>
+            <div class="cart-content">
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs.0</div>
+            </div>
+            <button class="button-buy">Place Order</button>
+            <i class='bx bx-x' id="cart-close" ></i>
+        </div>
+
+        <!-- signin -->
+        <div class="sign">
+            <i class='bx bx-x' id="sign-close" ></i>
+            <h3><span>Hunt</span> Pizza</h3>
+            <form class="box" method="GET">
+                <h1>Login</h1>
+                <div>
+                    <span id="swig">Username</span>
+                    <input type="text" name="username" placeholder="username" />
+                </div>
+                <div>
+                    <span id="swig">password</span>
+                    <input
+                    type="Password"
+                    class="password"
+                    name="password"
+                    placeholder="Password"
+                  /></div>             
+                <button type="Submit" name="Submit" value="Login">Submit</button>
+                <li><a>Forgetten Password</a></li>
+            </form>
+            <a class="create" href="/files/sign.html">
+                Create Account
+            <i class='bx bx-chevron-right'></i>
+            </a>
+        </div>
+
+        <!-- Favourite -->
+        <div class="favs">
+            <div class="fav-title">
+                Favourite  Items
+            </div>
+            <div class="fav-content">
+            </div>
+            <i class='bx bx-x' id="fav-close" ></i>
+        </div>
+    </header>
+
+    <!-- main content -->
+
+    <!-- intro -->
+    <div class="intro">
+        <div class="image1">
+            <img src="/images/pizza2.png" alt="">
+        </div>
+        <div class="name">
+            <span>H</span>unt <span>P</span>izza
+        </div>
+        <div class="image2">
+            <img src="/images/pizza3.png" alt="">
+        </div> 
+    </div>
+
+    <!-- search -->
+    <div class="search-box">
+        <div class="searchbar">
+            <input type="search" id="search" placeholder="Search Here..." name="searchbar" >
+            <i class='bx bx-search'></i>
+        </div>
+    </div>
+
+    <!-- food box  -->
+    <div class="container">
+        <div class="main-content">
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/chicken sausage.jpg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Chicken Sausage</h2>
+                <span class="food-price">Rs.200</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/farmhouse.png" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Farmhouse</h2>
+                <span class="food-price">Rs.300</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/Fiery Sausage.jpeg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Sausage</h2>
+                <span class="food-price">Rs.250</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/margherita.jpg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Margherita</h2>
+                <span class="food-price">Rs.100</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/new cheese.jpg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">New Cheese</h2>
+                <span class="food-price">Rs.300</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/fresh_veggie.jpg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Fresh Veggi</h2>
+                <span class="food-price">Rs.350</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/Onion.jpeg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Onion</h2>
+                <span class="food-price">Rs.130</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/peppy paneer.jpg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Peppy Paneer</h2>
+                <span class="food-price">Rs.340</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/veg extravaganza.jpg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Extravaganza</h2>
+                <span class="food-price">Rs.200</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/b2fd890f-5889-4934-chicken_golden_delight.jpg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Golden Delight</h2>
+                <span class="food-price">Rs.280</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/chicken_fiesta.jpg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Fiesta</h2>
+                <span class="food-price">Rs.290</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/cheesepepperoni.png" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">Cheesi Pepperoni</h2>
+                <span class="food-price">Rs.250</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <i class='bx bx-heart-circle' id="add-heart" ></i>
+                <div class="picture">
+                    <img src="/images/Keema.jpg" class="food-image" alt="">
+                </div>
+                <h2 class="food-title">chicken Keema</h2>
+                <span class="food-price">Rs.200</span>
+                <i class='bx bx-cart' id="add-cart"></i>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <span>Copyright </span>
+        <p>@ 2023 Designed by <a href="https://instagram.com/ke__rahul">ker</a></p>
+        <a href="#" id="gotop"><i class='bx bx-up-arrow-alt' ></i></a>
+    </div>
+
+    <!-- bottom bar -->
+    <div class="bottom-bar">
+        <div class="sector">
+            <a href="index.html"><i class='bx bx-home  active'></i><span class="active">Home</span></a> 
+        </div>
+        <div class="sector">
+            <a href="/files/order.html"><i class='bx bx-shopping-bag'></i><span>Orders</span></a>        
+        </div>
+        <div class="sector">
+            <a href="/files/notify.html"><i class='bx bx-bell' ></i><span>Notification</span></a>
+        </div>
+        <div class="sector">
+            <a href="/files/account.html"><i class='bx bxs-user-account' ></i><span>Account</span></a>
+        </div>
+        <div class="sector">
+            <a href="/files/menu.html"><i class='bx bx-menu' ></i><span>Menu</span></a>
+        </div>          
+    </div>
+
+
+    <!-- js -->
+    <script src="/js/app.js"></script>
+</body>
+</html>

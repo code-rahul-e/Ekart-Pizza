@@ -1,0 +1,47 @@
+.menu
+{
+    margin: 20px ;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.menu a{
+    color: var(--icon-color);
+}
+
+.settings,
+.customer{
+    width: 40%;
+    align-items: center;
+    border: 1px solid var(--icon-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.menu .fonts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .fonts h3{
+    font-size: 30px;
+    color: var(--primary-color);
+    font-family: 'Dancing Script', cursive;
+    margin: 20px;
+    align-items: center;
+}
+
+.menu .fonts h3 span{
+    color: var(--secondary-color);
+    font-family: 'Dancing Script', cursive;
+}
+
+@media (max-width:860px){
+    .settings, .customer{
+        width: 90%;
+    }
+
+}
